@@ -10,7 +10,7 @@ if (!tokenId || !category || !src || !name) {
 }
 
 const ROOT = path.resolve(new URL('..', import.meta.url).pathname);
-const BASE = 'https://underwindAdmin.github.io/thangka-nft-assets';
+const BASE = 'https://underwindadmin.github.io/thangka-nft-assets';
 
 const imgOut = path.join(ROOT, 'images', `${tokenId}.jpg`);
 await sharp(src).resize({ width: 1024, withoutEnlargement: true }).jpeg({ quality: 78, mozjpeg: true }).toFile(imgOut);
@@ -19,7 +19,7 @@ const meta = {
   name: `Thangka #${tokenId} — ${name}`,
   description: `唐卡数字藏品 #${tokenId} · ${category}`,
   image: `${BASE}/images/${tokenId}.jpg`,
-  external_url: 'https://thangkaart.cn/',
+  external_url: 'http://127.0.0.1:8000/',
   attributes: [
     { trait_type: 'Collection', value: 'Thangka' },
     { trait_type: 'Category', value: category },
