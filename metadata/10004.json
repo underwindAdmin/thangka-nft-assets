@@ -1,0 +1,20 @@
+{
+  "name": "Thangka #10004 — 绿度母 Green Tara",
+  "description": "唐卡数字藏品 #10004 · bodhisattva",
+  "image": "https://underwindadmin.github.io/thangka-nft-assets/images/10004.jpg",
+  "external_url": "http://127.0.0.1:8000/",
+  "attributes": [
+    {
+      "trait_type": "Collection",
+      "value": "Thangka"
+    },
+    {
+      "trait_type": "Category",
+      "value": "bodhisattva"
+    },
+    {
+      "trait_type": "Edition",
+      "value": "Genesis"
+    }
+  ]
+}
