@@ -1,0 +1,20 @@
+{
+  "name": "Thangka #10000 — Shakyamuni Buddha",
+  "description": "释迦牟尼佛 · 释迦牟尼如来 — Thangka digital collectible minted on Ethereum Sepolia.",
+  "image": "https://underwindAdmin.github.io/thangka-nft-assets/images/10000.jpg",
+  "external_url": "https://thangkaart.cn/",
+  "attributes": [
+    {
+      "trait_type": "Collection",
+      "value": "Thangka"
+    },
+    {
+      "trait_type": "Category",
+      "value": "Buddha"
+    },
+    {
+      "trait_type": "Edition",
+      "value": "Genesis"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "name": "Thangka #10003 — Mahakala",
+  "description": "大黑天护法 — Thangka digital collectible minted on Ethereum Sepolia.",
+  "image": "https://underwindAdmin.github.io/thangka-nft-assets/images/10003.jpg",
+  "external_url": "https://thangkaart.cn/",
+  "attributes": [
+    {
+      "trait_type": "Collection",
+      "value": "Thangka"
+    },
+    {
+      "trait_type": "Category",
+      "value": "Protector"
+    },
+    {
+      "trait_type": "Edition",
+      "value": "Genesis"
+    }
+  ]
+}

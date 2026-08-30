@@ -1,0 +1,20 @@
+{
+  "name": "Thangka #10001 — Thousand-Armed Avalokiteshvara",
+  "description": "千手千眼观世音菩萨 — Thangka digital collectible minted on Ethereum Sepolia.",
+  "image": "https://underwindAdmin.github.io/thangka-nft-assets/images/10001.jpg",
+  "external_url": "https://thangkaart.cn/",
+  "attributes": [
+    {
+      "trait_type": "Collection",
+      "value": "Thangka"
+    },
+    {
+      "trait_type": "Category",
+      "value": "Bodhisattva"
+    },
+    {
+      "trait_type": "Edition",
+      "value": "Genesis"
+    }
+  ]
+}
