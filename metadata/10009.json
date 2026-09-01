@@ -1,0 +1,20 @@
+{
+  "name": "Thangka #10009 — 黄财神 Yellow Jambhala",
+  "description": "唐卡数字藏品 #10009 · protector",
+  "image": "https://underwindadmin.github.io/thangka-nft-assets/images/10009.jpg",
+  "external_url": "http://localhost:8080/",
+  "attributes": [
+    {
+      "trait_type": "Collection",
+      "value": "Thangka"
+    },
+    {
+      "trait_type": "Category",
+      "value": "protector"
+    },
+    {
+      "trait_type": "Edition",
+      "value": "Genesis"
+    }
+  ]
+}
