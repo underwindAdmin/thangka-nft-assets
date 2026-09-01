@@ -19,7 +19,7 @@ const meta = {
   name: `Thangka #${tokenId} — ${name}`,
   description: `唐卡数字藏品 #${tokenId} · ${category}`,
   image: `${BASE}/images/${tokenId}.jpg`,
-  external_url: 'http://127.0.0.1:8000/',
+  external_url: 'http://localhost:8080/',
   attributes: [
     { trait_type: 'Collection', value: 'Thangka' },
     { trait_type: 'Category', value: category },
