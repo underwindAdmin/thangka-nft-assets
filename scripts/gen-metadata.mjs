@@ -10,7 +10,7 @@ if (!tokenId || !category || !src || !name) {
 }
 
 const ROOT = path.resolve(new URL('..', import.meta.url).pathname);
-const BASE = 'https://underwindadmin.github.io/thangka-nft-assets';
+const BASE = (process.env.NFT_ASSETS_BASE || 'https://underwindadmin.github.io/thangka-nft-assets').replace(/\/$/, '');
 
 const imgOut = path.join(ROOT, 'images', `${tokenId}.jpg`);
 await sharp(src).resize({ width: 1024, withoutEnlargement: true }).jpeg({ quality: 78, mozjpeg: true }).toFile(imgOut);
