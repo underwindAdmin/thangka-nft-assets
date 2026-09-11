@@ -1,0 +1,20 @@
+{
+  "name": "Thangka #10019 — 莲花生大师 Padmasambhava",
+  "description": "唐卡数字藏品 #10019 · Masters",
+  "image": "https://underwindadmin.github.io/thangka-nft-assets/images/10019.jpg",
+  "external_url": "http://localhost:8080/",
+  "attributes": [
+    {
+      "trait_type": "Collection",
+      "value": "Thangka"
+    },
+    {
+      "trait_type": "Category",
+      "value": "Masters"
+    },
+    {
+      "trait_type": "Edition",
+      "value": "Genesis"
+    }
+  ]
+}
