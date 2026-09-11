@@ -1,0 +1,20 @@
+{
+  "name": "Thangka #10017 — 千手观音 Thousand-Armed Guanyin",
+  "description": "唐卡数字藏品 #10017 · Compassion",
+  "image": "https://underwindadmin.github.io/thangka-nft-assets/images/10017.jpg",
+  "external_url": "http://localhost:8080/",
+  "attributes": [
+    {
+      "trait_type": "Collection",
+      "value": "Thangka"
+    },
+    {
+      "trait_type": "Category",
+      "value": "Compassion"
+    },
+    {
+      "trait_type": "Edition",
+      "value": "Genesis"
+    }
+  ]
+}
