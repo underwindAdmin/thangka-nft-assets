@@ -1,0 +1,20 @@
+{
+  "name": "Thangka #10016 — 药师佛 Medicine Buddha",
+  "description": "唐卡数字藏品 #10016 · Buddha",
+  "image": "https://underwindadmin.github.io/thangka-nft-assets/images/10016.jpg",
+  "external_url": "http://localhost:8080/",
+  "attributes": [
+    {
+      "trait_type": "Collection",
+      "value": "Thangka"
+    },
+    {
+      "trait_type": "Category",
+      "value": "Buddha"
+    },
+    {
+      "trait_type": "Edition",
+      "value": "Genesis"
+    }
+  ]
+}
