@@ -19,7 +19,7 @@ const meta = {
   name: `Thangka #${tokenId} — ${name}`,
   description: `唐卡数字藏品 #${tokenId} · ${category}`,
   image: `${BASE}/images/${tokenId}.jpg`,
-  external_url: 'http://localhost:8080/',
+  external_url: process.env.NFT_EXTERNAL_URL || 'mailto:studio@baoxia.art',
   attributes: [
     { trait_type: 'Collection', value: 'Thangka' },
     { trait_type: 'Category', value: category },
