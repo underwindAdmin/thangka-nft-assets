@@ -1,0 +1,21 @@
+{
+  "name": "Thangka #10035 — 药师佛 Medicine Buddha",
+  "description": "唐卡数字藏品 #10035 · Buddha",
+  "image": "https://underwindadmin.github.io/thangka-nft-assets/images/10035.jpg",
+  "external_url": "mailto:studio@baoxia.art",
+  "attributes": [
+    {
+      "trait_type": "Collection",
+      "value": "Thangka"
+    },
+    {
+      "trait_type": "Category",
+      "value": "Buddha"
+    },
+    {
+      "trait_type": "Edition",
+      "value": "Genesis"
+    }
+  ],
+  "order_number": "BX-000040"
+}
