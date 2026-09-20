@@ -1,0 +1,21 @@
+{
+  "name": "Thangka #10039 — 绿度母 Green Tara",
+  "description": "唐卡数字藏品 #10039 · Tara",
+  "image": "https://underwindadmin.github.io/thangka-nft-assets/images/10039.jpg",
+  "external_url": "mailto:studio@baoxia.art",
+  "attributes": [
+    {
+      "trait_type": "Collection",
+      "value": "Thangka"
+    },
+    {
+      "trait_type": "Category",
+      "value": "Tara"
+    },
+    {
+      "trait_type": "Edition",
+      "value": "Genesis"
+    }
+  ],
+  "order_number": "BX-000046"
+}
