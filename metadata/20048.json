@@ -1,0 +1,21 @@
+{
+  "name": "药师佛 — Medicine Buddha",
+  "description": "保夏唐卡 · 药师佛（Medicine Buddha）",
+  "image": "https://underwindadmin.github.io/thangka-nft-assets/images/products/medicine-buddha.jpg",
+  "external_url": "mailto:studio@baoxia.art",
+  "attributes": [
+    {
+      "trait_type": "Collection",
+      "value": "Thangka"
+    },
+    {
+      "trait_type": "Category",
+      "value": "Buddha"
+    },
+    {
+      "trait_type": "Edition",
+      "value": "Genesis"
+    }
+  ],
+  "order_number": "BX-000060"
+}
