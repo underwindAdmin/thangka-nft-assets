@@ -16,9 +16,8 @@ if (!tokenId) {
 const meta = join(ROOT, 'metadata', `${tokenId}.json`);
 const img = join(ROOT, 'images', `${tokenId}.jpg`);
 
-const missing = [meta, img].filter((file) => !existsSync(file));
-if (missing.length > 0) {
-  console.error(`缺少文件，无法 push：\n${missing.map((f) => `  ${f}`).join('\n')}`);
+if (!existsSync(meta)) {
+  console.error(`缺少 metadata，无法 push：\n  ${meta}`);
   process.exit(1);
 }
 
@@ -37,13 +36,25 @@ for (const key of ['name', 'image']) {
   }
 }
 
-const add = ['add', `metadata/${tokenId}.json`, `images/${tokenId}.jpg`];
-const commit = ['commit', '-m', `Add metadata and image for token ${tokenId}`];
+// metadata_json 模式：image 可以是商品图外部 URL，此时没有本地 images/{tokenId}.jpg。
+// 本地图存在则 metadata+图一起提交；不存在则只提交 metadata（image 字段必须已通过校验）。
+const hasLocalImage = existsSync(img);
+const add = hasLocalImage
+  ? ['add', `metadata/${tokenId}.json`, `images/${tokenId}.jpg`]
+  : ['add', `metadata/${tokenId}.json`];
+const commit = [
+  'commit',
+  '-m',
+  hasLocalImage
+    ? `Add metadata and image for token ${tokenId}`
+    : `Add metadata for token ${tokenId}`,
+];
 const push = ['push', 'origin', 'main'];
 
 console.log(`✅ 文件就绪: #${tokenId}`);
 console.log(`   ${meta}`);
-console.log(`   ${img}`);
+if (hasLocalImage) console.log(`   ${img}`);
+else console.log(`   image=${parsed.image}（外部 URL，无本地图）`);
 console.log('');
 console.log('执行以下命令推送（本脚本不持有 GitHub 凭据）：');
 console.log(`  cd ${ROOT}`);
@@ -71,7 +82,7 @@ if (process.argv.includes('--yes')) {
   const hasStaged = !tryRun(['diff', '--cached', '--quiet']);
   if (hasStaged) {
     run(commit);
-    console.log(`[--yes] 已提交: Add metadata and image for token ${tokenId}`);
+    console.log(`[--yes] 已提交: ${commit[2]}`);
   } else {
     console.log('[--yes] 无新变更，跳过 commit（此前已提交）');
   }
