@@ -51,10 +51,35 @@ console.log(`  git ${add.join(' ')}`);
 console.log(`  git ${commit.join(' ')}`);
 console.log(`  git ${push.join(' ')}`);
 
+function run(args) {
+  execFileSync('git', args, { cwd: ROOT, stdio: 'inherit' });
+}
+
+function tryRun(args) {
+  try {
+    run(args);
+    return true;
+  } catch {
+    return false;
+  }
+}
+
 if (process.argv.includes('--yes')) {
-  console.log('\n[--yes] 直接执行 git add/commit/push ...');
-  execFileSync('git', add, { cwd: ROOT, stdio: 'inherit' });
-  execFileSync('git', commit, { cwd: ROOT, stdio: 'inherit' });
-  execFileSync('git', push, { cwd: ROOT, stdio: 'inherit' });
+  console.log('\n[--yes] 执行 git add/commit/push（幂等：已提交则只 push）...');
+  run(add);
+  // 幂等关键：暂存区无变更（文件已 commit 过）时跳过 commit，否则 git commit 非零退出
+  const hasStaged = !tryRun(['diff', '--cached', '--quiet']);
+  if (hasStaged) {
+    run(commit);
+    console.log(`[--yes] 已提交: Add metadata and image for token ${tokenId}`);
+  } else {
+    console.log('[--yes] 无新变更，跳过 commit（此前已提交）');
+  }
+  if (!tryRun(push)) {
+    // 兜底：远端有新提交导致 non-fast-forward → rebase 后重试一次
+    console.log('[--yes] push 被拒，pull --rebase 后重试 ...');
+    run(['pull', '--rebase', 'origin', 'main']);
+    run(push);
+  }
   console.log('✅ 已推送');
 }

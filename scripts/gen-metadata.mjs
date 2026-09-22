@@ -1,11 +1,11 @@
-// 新 token 一键补元数据 + 压缩图。用法：node scripts/gen-metadata.mjs <tokenId> <category> <源图路径> <名称>
+// 新 token 一键补元数据 + 压缩图。用法：node scripts/gen-metadata.mjs <tokenId> <category> <源图路径> <名称> [orderNumber]
 import sharp from 'sharp';
 import fs from 'node:fs';
 import path from 'node:path';
 
-const [, , tokenId, category, src, name] = process.argv;
+const [, , tokenId, category, src, name, orderNumber] = process.argv;
 if (!tokenId || !category || !src || !name) {
-  console.error('用法: node scripts/gen-metadata.mjs <tokenId> <category> <源图路径> <名称>');
+  console.error('用法: node scripts/gen-metadata.mjs <tokenId> <category> <源图路径> <名称> [orderNumber]');
   process.exit(1);
 }
 
@@ -25,6 +25,7 @@ const meta = {
     { trait_type: 'Category', value: category },
     { trait_type: 'Edition', value: 'Genesis' },
   ],
+  ...(orderNumber ? { order_number: orderNumber } : {}),
 };
 fs.writeFileSync(path.join(ROOT, 'metadata', `${tokenId}.json`), JSON.stringify(meta, null, 2));
 console.log(`生成 #${tokenId} 完成`);
