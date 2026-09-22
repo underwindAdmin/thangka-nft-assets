@@ -1,7 +1,7 @@
 {
-  "name": "Thangka #20047 — Genesis",
-  "description": "唐卡数字藏品 #20047 · Thangka",
-  "image": "https://underwindadmin.github.io/thangka-nft-assets/images/20047.jpg",
+  "name": "释迦牟尼 — Shakyamuni Buddha",
+  "description": "保夏唐卡 · 释迦牟尼（Shakyamuni Buddha）",
+  "image": "https://underwindadmin.github.io/thangka-nft-assets/images/20047.jpg?v=2",
   "external_url": "mailto:studio@baoxia.art",
   "attributes": [
     {
@@ -10,7 +10,7 @@
     },
     {
       "trait_type": "Category",
-      "value": "Thangka"
+      "value": "Buddha"
     },
     {
       "trait_type": "Edition",
