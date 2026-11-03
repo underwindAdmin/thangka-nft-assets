@@ -1,0 +1,21 @@
+{
+  "name": "Thangka #20052 — Genesis",
+  "description": "唐卡数字藏品 #20052 · Thangka",
+  "image": "https://underwindadmin.github.io/thangka-nft-assets/images/20052.jpg",
+  "external_url": "mailto:studio@baoxia.art",
+  "attributes": [
+    {
+      "trait_type": "Collection",
+      "value": "Thangka"
+    },
+    {
+      "trait_type": "Category",
+      "value": "Thangka"
+    },
+    {
+      "trait_type": "Edition",
+      "value": "Genesis"
+    }
+  ],
+  "order_number": "2026110335572"
+}
