@@ -1,0 +1,21 @@
+{
+  "name": "千手观音 — Thousand-Armed Guanyin",
+  "description": "保夏唐卡 · 千手观音（Thousand-Armed Guanyin）",
+  "image": "https://underwindadmin.github.io/thangka-nft-assets/images/products/thousand-armed-guanyin.jpg",
+  "external_url": "mailto:studio@baoxia.art",
+  "attributes": [
+    {
+      "trait_type": "Collection",
+      "value": "Thangka"
+    },
+    {
+      "trait_type": "Category",
+      "value": "Compassion"
+    },
+    {
+      "trait_type": "Edition",
+      "value": "Genesis"
+    }
+  ],
+  "order_number": "BX-000063"
+}
